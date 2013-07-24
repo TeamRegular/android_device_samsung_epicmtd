@@ -81,8 +81,12 @@ BOARD_CUSTOM_VSYNC_IOCTL := true
 TARGET_KERNEL_CONFIG := cyanogenmod_epicmtd_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/epicmtd/
 
-# Fallback
-TARGET_PREBUILT_KERNEL := device/samsung/epicmtd/kernel
+# Charging mode
+BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/charging_mode_booting
+# Suspend in charger to disable capacitive keys
+BOARD_CHARGER_ENABLE_SUSPEND := true
+# Charging Images
+BOARD_CHARGER_RES := device/samsung/epicmtd/charger
 
 # WIFI defines
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
@@ -111,3 +115,8 @@ TARGET_OTA_ASSERT_DEVICE := epic,epicmtd,SPH-D700
 
 # RIL
 BOARD_RIL_CLASS := "../../../device/samsung/epicmtd/epicril/"
+
+# Bootanimation
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+TARGET_BOOTANIMATION_USE_RGB565 := true

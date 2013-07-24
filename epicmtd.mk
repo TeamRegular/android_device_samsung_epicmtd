@@ -21,6 +21,8 @@
 
 DEVICE_PACKAGE_OVERLAYS := device/samsung/epicmtd/overlay
 
+# Charger
+PRODUCT_PACKAGES += charger charger_res_images
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES := \
