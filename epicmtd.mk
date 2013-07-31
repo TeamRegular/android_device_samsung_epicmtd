@@ -149,6 +149,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.v3=datacall \
     ro.ril.samsung_cdma=true
 
+# Support for Browser's saved page feature. This allows
+# for pages saved on previous versions of the OS to be
+# viewed on the current OS.
+PRODUCT_PACKAGES += \
+  libskia_legacy
+
 # WiMAX Property setting for checking WiMAX interface
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wimax.interface=uwbr0 \
