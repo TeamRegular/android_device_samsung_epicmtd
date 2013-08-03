@@ -368,8 +368,7 @@ service bdaddr /system/bin/bdaddr_read
     disabled
     oneshot
 
-# for Broadcom Bluetooth
-service iprenew_bnep0 /system/bin/dhcpcd -n
+service dhcpcd_bt-pan /system/bin/dhcpcd -ABKL
     class main
     disabled
     oneshot
@@ -386,6 +385,12 @@ service iprenew_bnep0 /system/bin/dhcpcd -n
     oneshot
 
   service iprenew_uwbr0 /system/bin/dhcpcd -n
+    class main
+    disabled
+    oneshot
+
+# for Broadcom Bluetooth
+service iprenew_bt-pan /system/bin/dhcpcd -n
     class main
     disabled
     oneshot
