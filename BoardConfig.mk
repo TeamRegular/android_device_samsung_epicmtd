@@ -54,6 +54,11 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/epicmtd/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/samsung/epicmtd/bluetooth/vnd_epicmtd.txt
 
+# Bootanimation
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+TARGET_BOOTANIMATION_USE_RGB565 := true
+
 # Video Devices
 BOARD_USES_OVERLAY := true
 BOARD_V4L2_DEVICE := /dev/video1
