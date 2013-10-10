@@ -139,3 +139,14 @@ BOARD_SEPOLICY_UNION := \
 
 # Hardware tunables
 BOARD_HARDWARE_CLASS := device/samsung/epicmtd/cmhw/
+
+#TWRP
+# TWRP 2 details
+DEVICE_RESOLUTION := 480x800
+TW_INCLUDE_INJECTTWRP := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_DEFAULT_EXTERNAL_STORAGE := true
+HAVE_SELINUX := true
+TWRP_CUSTOM_KEYBOARD := ../../../device/samsung/epicmtd/recovery/hardwarekeyboard.cpp

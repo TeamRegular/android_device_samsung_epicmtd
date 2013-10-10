@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES := \
 # Init files
 PRODUCT_COPY_FILES += \
   device/samsung/epicmtd/fstab.victory:root/fstab.victory \
+  device/samsung/epicmtd/recovery/twrp.fstab:recovery/root/etc/twrp.fstab \
   device/samsung/epicmtd/ueventd.victory.rc:root/ueventd.victory.rc \
   device/samsung/epicmtd/lpm.rc:root/lpm.rc \
   device/samsung/epicmtd/init.victory.rc:root/init.victory.rc \
